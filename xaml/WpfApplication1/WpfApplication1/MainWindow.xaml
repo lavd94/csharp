@@ -14,15 +14,15 @@
             <RowDefinition Height="288*" />
             <RowDefinition Height="0*" />
         </Grid.RowDefinitions>
-        <TextBox HorizontalAlignment="Stretch" Name="textBox1" VerticalAlignment="Stretch" Grid.Row="2" AcceptsReturn="True" MinWidth="10" Grid.Column="1" />
+        <TextBox HorizontalAlignment="Stretch" Name="textBox1" VerticalAlignment="Stretch" Grid.Row="2" AcceptsReturn="True" MinWidth="10" Grid.Column="1" TextChanged="textBox1_TextChanged" />
         <Menu Grid.Column="1" Grid.Row="1" Height="Auto" Name="menu1" VerticalAlignment="Top">
-            <MenuItem Header="Archivo" Click="MenuItem_Click_1" Name="MenArchivo">
+            <MenuItem Header="Archivo" Name="MenArchivo">
                 <MenuItem Header="Abrir" Name="BtnAbrir"></MenuItem>
-                <MenuItem Header="Nuevo" Name="BtnNuevo" />
+                <MenuItem Header="Nuevo" Click="nuevo_click" />
                 <MenuItem Header="Guardar" Name="BtnGuardar" />
             </MenuItem>
-            <MenuItem Header="a" Click="MenuItem_Click_2" />
-            <MenuItem Header="c" Click="MenuItem_Click">
+            <MenuItem Header="a"  />
+            <MenuItem Header="c" >
                 <MenuItem Header="a">
                     <MenuItem Header="a" />
                     <MenuItem Header="a" />
